@@ -1,10 +1,11 @@
 var InputView = Backbone.View.extend({
 
-  tagName: 'input',
+  tagName: 'input', // another way (the backbone way) to specify the el tag
   // el: '<input>',
 
+  // list of all events that this view is going to react to
   events: {
-    'keydown': 'keyAction',
+    'keydown': 'keyAction', // keyaction method on line 19
   },
 
   initialize: function() {
@@ -12,7 +13,7 @@ var InputView = Backbone.View.extend({
   },
 
   render: function() {
-    this.resetInput();
+    this.resetInput(); // adds in placeholder text
     return this;
   },
 

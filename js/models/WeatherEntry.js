@@ -1,5 +1,6 @@
 var WeatherEntry = Backbone.Model.extend({
 
+  // here we define the shape of our data (model)
   defaults: {
     zipcode: '',
     city: '',
@@ -8,6 +9,12 @@ var WeatherEntry = Backbone.Model.extend({
   },
 
   initialize: function() {},
+
+  
+
+  // if you manipulate the data it happens here in the model
+
+
 
   toggleUnit: function() {
 
